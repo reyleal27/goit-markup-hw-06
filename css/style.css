@@ -514,6 +514,26 @@ p{
     cursor: pointer;
 }
 
+/* newsletter */
+.footer-newsletter{
+    width: 453px;
+    margin-left: 80px;
+    height: 80px;
+}
+.email-box{
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer-newsletter h5{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--white);
+    padding-bottom: 16px;
+}
 /* MODAL CSS */
 .modal{
     background-color: rgba(0, 0, 0, 0.5);
