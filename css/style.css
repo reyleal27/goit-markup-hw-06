@@ -478,7 +478,10 @@ p{
     letter-spacing: 0.32px;
 }
 
-
+.social-media-footer{
+    height: 80px;
+    width: 208px;
+}
 .social-media-footer .our-team-link svg{
     width: 24px;
     height: 24px;
@@ -516,15 +519,59 @@ p{
 
 /* newsletter */
 .footer-newsletter{
-    width: 453px;
     margin-left: 80px;
     height: 80px;
 }
 .email-box{
+    width: 264px;
+    height: 40px;
     border-radius: 4px;
-    border: 1px solid var(--WHITE, #FFF);
+    border: 1px solid var(--white);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--navy-blue);
+    padding-left: 16px;
+    margin-right: 24px;
+    transition: border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.email-box:hover{
+    border:1px solid var(--secondary-color);
+
+}
+.email-box::placeholder{
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+}
+
+.subscribe-btn{
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    height: 40px;
+    width: 164px;
+    color: var(--white);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,.subscribe-btn:focus{
+    background-color: var(--ocean);
+}
+
 .footer-newsletter h5{
     font-family: Roboto;
     font-size: 16px;
@@ -564,8 +611,7 @@ p{
 
 .modal-content{
     position: relative;
-    width: 528px;
-    height: 580px;
+    width: 408px;
     background: var(--DAIRY);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -573,9 +619,20 @@ p{
     transition-property:tranform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+   
 }
 
-
+.user-contact-heading{
+    color: var(--navy-blue);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+   
+}
 .modal-close{
     display: flex;
     justify-content: center;
@@ -598,7 +655,130 @@ p{
     background-color: var(--ocean);
 }
 
+/* FORM */
+.user-contact{
+    margin-top: 16px;
+}
 
+.form-label{
+    position: relative;
+   display: block;
+   width: 360px;
+   margin-top: 8px;
+   color: var(--LIGHT-SLATE);
+}
+.input-bx{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--navy-blue);
+    margin-top: 4px;
+    display: block;
+    padding: 0;
+    transition: border 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-bx[type="text"],.input-bx[type="tel"],.input-bx[type="email"]{
+    padding-left:38px;
+    font-size: 16px;
+}
+
+.input-bx:focus,.input-bx:hover{
+    border:1px solid var(--secondary-color);
+    outline:none;
+}
+
+.input-bx:focus + .form-icon,.input-bx:hover +.form-icon{
+    fill:var(--secondary-color);
+}
+
+.comment-bx{
+    width: 365px;
+    border-radius: 4px;
+    border: 1px solid var(--navy-blue);
+    margin-top: 4px;
+    display: block;
+    padding: 0;
+    height: 120px;
+    resize: none;
+}
+
+.comment-bx:focus,.comment-bx:hover{
+    border:1px solid var(--secondary-color);
+    outline:none;
+}
+
+.comment-bx[type="text"]{
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.checkbox-label{
+    color: var(--LIGHT-SLATE);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    
+}
+.checkbox-label span{
+    color: var(--secondary-color);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.form-icon{
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    top: 50%;
+    left: 15px;
+    fill: var(--navy-blue);
+}
+
+
+.form-btn{
+    border-radius: 4px;
+    background: var(--IRIS, #4D5AE5);
+    color: var(--white);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 80px;
+    cursor: pointer;
+    transition: box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-btn:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: var(--ocean);
+}
 
 /*Portfolio Design*/
 .filter-buttons{
@@ -630,8 +810,8 @@ p{
 
 
 .buttons:hover, .buttons:focus{
-    color: var(--cloud);
-    background-color: var(--secondary-color);
+    color: var(--white);
+    background-color: var(--ocean);
     cursor: pointer;
     outline: transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);

@@ -69,7 +69,7 @@
                     <li class="feature-item">
                         <div class="advantages">
                             <svg class="advantages-icons">
-                                <use href="images/icon.svg#icon-diagram-1" class="icons"</use>
+                                <use href="images/icon.svg#icon-diagram-1" class="icons"></use>
                             </svg>
                         </div>
                             <h3 class="feature-title">Diligence</h3>
@@ -335,7 +335,7 @@
         <div class="footer-newsletter">
             <h5>Subscribe</h5>
             <input type="text" class="email-box" placeholder="E-mail">
-            <button class="subscribe-btn">Subscribe
+            <button type="submit" class="subscribe-btn">Subscribe
                 <img src="images/subscribe.svg" alt="subscribe-frame">
             </button>
         </div>
@@ -345,9 +345,49 @@
     
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
-                <button class="modal-close" data-modal-close>
-                    <img src="images/close-button.svg" alt="close-button">
-                </button>
+            
+            <h2 class="user-contact-heading">Leave your contacts and we will call you back</h2>
+            <button class="modal-close" data-modal-close>
+                <img src="images/close-button.svg" alt="close-button">
+            </button> 
+    
+                <form class="user-contact">
+                    <label class="form-label">
+                      <span>Name</span>
+                      <input class="input-bx" type="text" name="name" autofocus />
+                      <svg class="form-icon namel-svg">
+                        <use href="images/icon.svg#icon-person-black" class="input-icon"></use>
+                    </svg>
+                   
+                    </label>
+                    <label class="form-label">
+                      Phone
+                      <input class="input-bx" type="tel" name="phoneNumber" />
+                      <svg class="form-icon phone-svg">
+                        <use href="images/icon.svg#icon-phone-black" class="input-icon"></use>
+                    </svg>
+                     
+                    </label>
+                    <label class="form-label">
+                       E-mail
+                       <input class="input-bx" type="email" name="e-mail" />
+                       <svg class="form-icon email-svg">
+                        <use href="images/icon.svg#icon-email-black" class="input-icon"></use>
+                    </svg>
+                       
+                    </label>
+                    <label class="form-label">
+                        Comments
+                        <textarea name="comment" type="text" class="comment-bx" placeholder="Text input"></textarea>
+                    </label>
+
+                    <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox" name="agree">
+                    I accept the terms and conditions of the <span> &nbsp;Privacy Policy</span></label>
+                       
+                    <button class="form-btn" type="submit">Send</button>   
+                </form>
+                                
         </div>
     </div>
 
