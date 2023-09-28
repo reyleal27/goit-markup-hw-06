@@ -751,6 +751,8 @@ p{
     top: 50%;
     left: 15px;
     fill: var(--navy-blue);
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
